@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&family=Source+Serif+Pro:wght@600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  font-family: "Source+Serif+Pro";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #89daff;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  min-height: 1000px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background-color: #f1faee;
+  position: relative;
+  box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+  margin: 50px;
+}
+
+.container .left-side {
+  position: relative;
+  background-color: #457b9d;
+  padding: 40px;
+}
+
+.profile-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #fefae0;
+}
+
+.profile-img {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  /* object-fit: cover; */
+}
+
+.profile-img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-intro h2 {
+  color: #f1faee;
+  font-size: 1.5em;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.4em;
+}
+
+.profile-intro h2 span {
+  color: #14213d;
+  font-size: 0.8em;
+  font-weight: 500;
+}
+
+.contact-info {
+  padding-top: 40px;
+}
+
+.title {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.contact-info ul li{
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.contact-info ul li i{
+   display: inline-block;
+   color: #2d2d2d;
+   width: 30px;
+   font-size: 18px;
+}
+
+.contact-info ul span {
+    color: #f1faee;
+}
+
+.contact-info.education ul li{
+    margin-bottom: 15px;
+}
+
+.contact-info.education h5{
+    color: #89daff;
+    font-weight: 500;
+}
+.contact-info.education h4{
+    color: #f1faee;
+    text-transform: capitalize;
+    font-weight: 900;
+}
+
+.contact-info.education h4:last-child{
+    color: #f1faee;
+    font-weight: lighter;
+    font-style: italic;
+    
+}
+
+.container .right-side {
+  position: relative;
+  background-color: #f1faee;
+  padding: 40px;
+}
+
+.about {
+    margin-bottom: 50px;
+}
+
+.about:last-child {
+    margin-bottom: 0px;
+}
+
+.title2 {
+    color: #457b9d;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+p {
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.skills .box {
+    position: relative;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.box i {
+    padding-bottom: 5px;
+    font-size: 24px;
+    color: #333;
+    font-weight: 600;
+    position: relative;
+
+}
+
+.box .percent {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background-color: #a8a3a3;
+
+}
+
+.box .percent div {
+    content: '';
+    position: absolute;
+    width: 95%;
+    height: 100%;
+    background-color:#457b9d;
+    top:0;
+    left: 0;
+
+
+}
+
+.interest ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.interest ul li {
+
+  font-size: 20px;
+  font-weight: 700;
+  color:#2d2d2d;
+  text-transform: capitalize;
+}
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+    .container {
+        margin-top: 10px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .interest ul {
+        margin-top: 10px;
+        grid-template-columns: 1fr;
+    }
+}
+
+
